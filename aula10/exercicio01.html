@@ -1,0 +1,29 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title> Exercício PHP</title>
+</head>
+<body>
+
+<b>Exercício 01 -</b> Ler um número e qual operação realizar: dobro, cubo ou raiz quadrada.
+<br><br>
+<div>
+    <form method="get" action="exercicio01.php">
+        Número:
+        <input type="number" placeholder="Digite um número" name="numero"><br><br>
+        <fieldset><legend>Operação</legend>
+            <input type="radio" name="oper" id="dobro" value="1" checked/>
+            <label for="dobro">Dobro</label>
+
+            <input type="radio" name="oper" id="cubo" value="2"/>
+            <label for="cubo">Cubo</label>
+
+            <input type="radio" name="oper" id="raiz" value="3"/>
+            <label for="raiz">Raiz Quadrada</label>
+        </fieldset>
+        <br>
+        <input type="submit" value="Calcular">
+    </form>
+</div>
+</body>
+</html>
