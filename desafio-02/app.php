@@ -7,23 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-
-</header>
 <main>
-    <h1>Resultado Final</h1>
+    <h1>Trabalhando com números aleatórios</h1>
     <?php
-    $numero = $_GET["num"];
-    $antecesor = $numero - 1;
-    $sucessor = $numero + 1;
+    $aleatorio = mt_rand(0, 100);
+    // rand() = 1951 - Linear Congrential Generator
+    // Lenta nas versões abaixo da v7
+    // mt_rand() - 1997 - Mersenne Twister (recomendada)
+    // random_int() - gera números aleatórios criptograficamente seguros (lento)
 
-    print("O número escolhido foi $numero");
-    print("<br>O seu antecesor é $antecesor");
-    print("<br>O seu sucesor é $sucessor");
+    print("Gerando número aleatório entre 0 e 100");
+    print("<br>O valor gerado foi: $aleatorio ");
 
     ?>
-    <p><a href="javascript:history.go(-1)">Voltar</a></p>
-
+    <br><br>
+    <input type="submit" value="Gerar outro">
 </main>
 </body>
 </html>
