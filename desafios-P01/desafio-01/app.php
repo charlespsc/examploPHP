@@ -11,7 +11,7 @@
     <h1>Resultado Final</h1>
     <p>
     <?php
-        $numero = $_GET["num"];
+        $numero = $_GET["num"]?? 0;
         $antecesor = $numero - 1;
         $sucessor = $numero + 1;
 
